@@ -2,288 +2,453 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="Rifki-CV" content="">
-  <meta name="Rifki" content="">
-
-  <title>Rifki-CV</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="img/laravel.png">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-  <style>
-    .icon {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
-    }
-
-    .icon-codeigniter {
-      width: 0.841796875em;
-    }
-  </style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rifki - Flutter Mobile Developer Portfolio" />
+  <title>Rifki - Flutter Mobile Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body id="page-top">
-  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-    <symbol id="icon-codeigniter" viewBox="0 0 27 32">
-    <path fill="#ee4323" style="fill: var(--color1, #7F8C8D)" d="M1.378 30.243c-0.548 0-0.707-0.319-0.707-0.797 0-0.159 0.020-0.339 0.045-0.528 0.12-0.826 0.413-1.299 1.12-1.299 0.478 0 0.711 0.214 0.711 0.602v0.189h0.474c0.005 0 0.005-0.174 0.005-0.214 0-0.568-0.344-1.106-1.19-1.106-1.15 0-1.623 0.625-1.798 1.85-0.025 0.164-0.040 0.318-0.040 0.482 0 0.722 0.284 1.379 1.3 1.379 0.772 0 1.23-0.376 1.499-0.839l-0.453-0.305c-0.294 0.463-0.613 0.587-0.966 0.587zM4.49 27.962c-0.921 0-1.32 0.473-1.454 1.414-0.015 0.098-0.024 0.212-0.025 0.328v0.001c0 0.607 0.284 1.091 1.071 1.091 0.921 0 1.325-0.493 1.459-1.42 0.015-0.119 0.025-0.229 0.025-0.338 0-0.617-0.293-1.075-1.076-1.075zM4.874 29.376c-0.1 0.682-0.314 0.892-0.717 0.892-0.323 0-0.483-0.135-0.483-0.538 0-0.1 0.010-0.219 0.030-0.354 0.1-0.677 0.299-0.886 0.707-0.886 0.329 0 0.493 0.134 0.493 0.543 0 0.1-0.010 0.214-0.030 0.344zM7.882 27.14l-0.154 0.914c-0.010 0.079-0.005 0.053 0.025 0.128-0.144-0.109-0.404-0.182-0.578-0.182-0.827 0-1.29 0.374-1.439 1.42-0.016 0.096-0.025 0.206-0.025 0.319 0 0.005 0 0.011 0 0.016v-0.001c0 0.762 0.448 1.046 1.051 1.046 0.254 0 0.503 0.005 0.697-0.159l0.050 0.31h0.478l0.558-3.811h-0.662zM7.409 30.123c-0.224 0.134-0.443 0.164-0.577 0.164-0.364 0-0.463-0.189-0.463-0.493 0-0.115 0.015-0.249 0.035-0.394 0.114-0.792 0.368-0.931 0.697-0.931 0.214 0 0.378 0.035 0.533 0.12l-0.225 1.534zM9.999 27.962c-0.912 0-1.339 0.433-1.484 1.414-0.015 0.12-0.025 0.234-0.025 0.344 0 0.672 0.344 1.076 1.1 1.076 0.588 0 1.026-0.244 1.26-0.692l-0.503-0.204c-0.144 0.219-0.338 0.368-0.682 0.368-0.368 0-0.518-0.099-0.518-0.428 0-0.065 0.005-0.159 0.015-0.159h1.797c0.025-0.254 0.055-0.434 0.055-0.583 0-0.498-0.189-1.136-1.016-1.136zM10.342 29.172h-1.096c0.11-0.254 0.294-0.647 0.672-0.647 0.294 0 0.438 0.172 0.438 0.465-0 0.050-0.005 0.182-0.015 0.182zM12.931 27.902l0.060-0.508h-1.405l-0.059 0.508h0.368l-0.398 2.541h-0.369l-0.059 0.508h1.404l0.060-0.508h-0.369l0.398-2.541h0.369zM15.785 28.664l0.179-0.508h-0.483l-0.348 0.072c-0.194-0.124-0.458-0.217-0.707-0.217-0.712 0-1.32 0.344-1.32 1.126 0 0.219 0.080 0.396 0.174 0.516-0.149 0.079-0.279 0.213-0.279 0.392 0 0.080 0.030 0.161 0.090 0.236-0.299 0.18-0.483 0.477-0.483 0.825 0 0.673 0.702 0.816 1.24 0.816 0.677 0 1.484-0.155 1.484-1.016 0-0.294-0.184-0.523-0.717-0.623l-0.961-0.18c-0.109-0.020-0.134-0.055-0.134-0.105 0-0.075 0.045-0.114 0.12-0.114l0.065 0.010c0.129 0.030 0.279 0.045 0.433 0.045 0.692 0 1.31-0.299 1.31-1.076 0-0.11-0.020-0.184-0.070-0.304 0.085 0.040 0.194 0.105 0.239 0.105h0.168v-0zM14.415 30.725c0.189 0.035 0.254 0.105 0.254 0.229 0 0.403-0.433 0.453-0.747 0.453-0.478 0-0.657-0.114-0.657-0.369 0-0.224 0.065-0.329 0.214-0.488l0.936 0.174zM14.211 29.421c-0.289 0-0.448-0.104-0.448-0.354 0-0.368 0.214-0.583 0.588-0.583 0.299 0 0.443 0.125 0.443 0.368 0 0.369-0.209 0.568-0.583 0.568zM17.554 27.962c-0.279 0-0.528 0.137-0.837 0.381l-0.045-0.187h-0.548l-0.383 2.795h0.662l0.289-2.119c0.194-0.119 0.433-0.293 0.637-0.293 0.249 0 0.339 0.12 0.339 0.349 0 0.055-0.005 0.217-0.015 0.277l-0.244 1.786h0.662l0.244-1.801c0.010-0.084 0.020-0.223 0.020-0.303 0-0.474-0.224-0.885-0.782-0.885zM19.594 30.251l0.005-0.068 0.289-2.026h-1.101l-0.069 0.508h0.483c-0.040 0-0.065 0.045-0.070 0.085l-0.199 1.349c-0.010 0.065-0.015 0.2-0.015 0.255 0 0.349 0.189 0.598 0.577 0.598h0.339l0.075-0.508h-0.214c-0.075 0-0.1-0.132-0.1-0.192zM20.022 27.14h-0.647c-0.040 0-0.040-0.147-0.045-0.097l-0.090 0.716c-0.005 0.045-0.005 0.143 0.035 0.143h0.648c0.040 0 0.040-0.174 0.045-0.219l0.090-0.553c0.005-0.050 0.005 0.010-0.035 0.010zM21.373 30.268c-0.164 0-0.244-0.070-0.244-0.219l0.005-0.010 0.209-1.374h0.757l0.229-0.508h-0.916l0.154-1.118-0.697 0.223-0.125 0.895h-0.403l-0.070 0.508h0.468c-0.045 0.254-0.090 0.089-0.095 0.139l-0.179 1.205c-0.010 0.055-0.010 0.095-0.010 0.144 0 0.473 0.349 0.65 0.767 0.65 0.388 0 0.702-0.113 0.946-0.318l-0.309-0.38c-0.155 0.094-0.259 0.163-0.488 0.163zM23.803 27.962c-0.911 0-1.339 0.433-1.484 1.414-0.015 0.12-0.025 0.234-0.025 0.344 0 0.672 0.344 1.076 1.1 1.076 0.588 0 1.026-0.244 1.26-0.692l-0.503-0.204c-0.144 0.219-0.339 0.368-0.682 0.368-0.368 0-0.518-0.099-0.518-0.428 0-0.065 0.005-0.159 0.015-0.159h1.798c0.025-0.254 0.055-0.434 0.055-0.583 0-0.498-0.189-1.136-1.016-1.136zM24.147 29.172h-1.096c0.109-0.254 0.293-0.647 0.672-0.647 0.294 0 0.438 0.172 0.438 0.465-0 0.050-0.005 0.182-0.015 0.182zM26.651 27.962c-0.239 0-0.463 0.137-0.687 0.351l-0.040-0.157h-0.548l-0.384 2.795h0.667l0.294-2.164c0.174-0.104 0.374-0.193 0.563-0.193 0.12 0 0.234-0.019 0.343-0.004l0.085-0.577c-0.1-0.020-0.2-0.050-0.294-0.050zM9.739 25.138c-1.507-0.652-2.918-2.308-2.921-4.002-0.004-1.847 1.167-3.416 2.623-4.447-0.175 0.661-0.271 1.266 0.163 1.858 0.403 0.55 1.109 0.817 1.776 0.672 1.558-0.341 1.629-2.054 0.706-3.051-0.913-0.988-1.797-2.104-1.449-3.537 0.174-0.718 0.615-1.391 1.174-1.872-0.429 1.129 0.791 2.242 1.595 2.796 1.395 0.962 2.925 1.689 4.208 2.816 1.349 1.185 2.345 2.787 2.144 4.646-0.218 2.014-1.819 3.415-3.614 4.123 3.794-0.837 7.714-3.782 7.794-7.989 0.067-3.462-2.308-6.126-5.25-7.651l-0.154-0.084c0.081 0.196 0.107 0.363 0.104 0.512 0.026-0.11 0.044-0.223 0.049-0.34-0.001 0.146-0.020 0.288-0.057 0.422l0.003-0.012 0.005-0.071c-0.048 0.197-0.123 0.37-0.222 0.526l0.004-0.007 0.043-0.046c-0.587 0.973-2.176 1.185-2.96 0.177-1.262-1.621 0.026-3.369 0.207-5.086 0.226-2.152-1.124-4.241-2.797-5.491 0.921 1.491-0.293 3.463-1.264 4.565-0.942 1.069-2.087 1.961-3.127 2.932-1.117 1.043-2.191 2.142-3.109 3.366-1.836 2.45-2.96 5.532-2.134 8.588 0.825 3.055 3.471 4.999 6.459 5.687z"></path>
-    </symbol>
-    </defs>
-  </svg>
+<body>
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">RIFKI</a>
+      <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">RIFKI</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-      </ul>
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="badge">Flutter Mobile Developer</p>
+          <h1><span style="color: #f5c518;">Hi, I'm</span> Rifki</h1>
+          <h2>Mobile Developer</h2>
+          <p>
+            I am a Mobile Developer with over 4 years of experience specializing in Flutter,
+            clean architecture, and unit testing. I build scalable, maintainable, and high-performance
+            Android and iOS applications.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn primary">View Portfolio</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+
+          <div class="stats">
+            <div><strong>4+</strong><span>Years Experience</span></div>
+            <div><strong>9+</strong><span>Professional Experiences</span></div>
+            <div><strong>6</strong><span>Featured Projects</span></div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/profile.png" alt="Rifki Profile Photo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container fade-up">
+        <div class="section-header">
+          <p>About</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="card about-card">
+          <p>
+            I am a Mobile Developer with over 4 years of experience specializing in Flutter,
+            clean architecture, and unit testing. I have successfully developed innovative and
+            user-friendly mobile applications for Android and iOS platforms, delivering
+            high-performance applications according to user needs. My skills include state
+            management, API integration, responsive UI design, and performance optimization.
+            With expertise in building scalable and maintainable codebases, I applied Scrum
+            and Agile methodologies to ensure efficient project management, collaboration,
+            and adaptability. Passionate about creating impactful digital experiences, I excel
+            in aligning technical solutions with business goals while maintaining a customer-oriented
+            approach throughout the development lifecycle.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container fade-up">
+        <div class="section-header">
+          <p>Skills</p>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="card skill-card">
+            <h3>Mobile Development</h3>
+            <span>Flutter</span><span>Dart</span><span>Android Java</span><span>Kotlin</span>
+          </div>
+          <div class="card skill-card">
+            <h3>Architecture</h3>
+            <span>Clean Architecture</span><span>Modularization</span><span>Dependency
+              Injection</span><span>MVC</span><span>MVVM</span>
+          </div>
+          <div class="card skill-card">
+            <h3>State Management</h3>
+            <span>BLoC</span><span>Riverpod</span><span>GetX</span>
+          </div>
+          <div class="card skill-card">
+            <h3>Backend Integration</h3>
+            <span>REST API</span><span>GraphQL</span><span>WebSocket</span><span>Dio</span>
+          </div>
+          <div class="card skill-card">
+            <h3>Firebase</h3>
+            <span>Crashlytics</span><span>Analytics</span><span>Remote Config</span><span>FCM</span>
+          </div>
+          <div class="card skill-card">
+            <h3>Database</h3>
+            <span>Hive</span><span>Sqflite</span><span>SharedPreferences</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container fade-up">
+        <div class="section-header">
+          <p>Career</p>
+          <h2>Work Experience</h2>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Mobile Developer</h3>
+                <h4>PT. Intikom Berlian Mustika</h4>
+              </div>
+              <span>Jun 2025 - Jun 2026</span>
+            </div>
+            <ul>
+              <li>Led the modernization of a legacy Flutter application by upgrading to the latest Flutter SDK.</li>
+              <li>Ensured compliance with Android 16 KB page size and current platform standards.</li>
+              <li>Diagnosed and resolved production issues through Firebase Crashlytics analysis.</li>
+              <li>Established MVC architecture, RESTful communication using Dio, GetX, and SharedPreferences.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Mobile Developer</h3>
+                <h4>PT. Japfa Comfeed Indonesia Tbk</h4>
+              </div>
+              <span>Oct 2024 - Apr 2025</span>
+            </div>
+            <ul>
+              <li>Developed MyJAPFA work schedule features for viewing, editing, and correcting employee shifts.</li>
+              <li>Built supervisor features to create employee groups and assign schedules.</li>
+              <li>Implemented Clean Architecture, Riverpod, Dio, GoRouter, and SharedPreferences.</li>
+              <li>Collaborated with business analysts and QA to deliver features with minimal bugs.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Mobile Developer</h3>
+                <h4>PT. Sinarmas Multifinance</h4>
+              </div>
+              <span>Jan 2024 - Sep 2024</span>
+            </div>
+            <ul>
+              <li>Created MRP feature on SMMF One App to shorten the MRP update process.</li>
+              <li>Implemented Clean Architecture, Dependency Injection, GetX, FCM, HTTP, and Hive.</li>
+              <li>Created features, improvements, and bug fixes for the application.</li>
+              <li>Built and delivered APKs to QA for feature testing.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Mobile Developer</h3>
+                <h4>PT. Mega Finance</h4>
+              </div>
+              <span>Jan 2023 - Nov 2023</span>
+            </div>
+            <ul>
+              <li>Created Mitra Mega app from scratch for agents in PT. Mega Finance.</li>
+              <li>Implemented Modularization, Clean Architecture, Dependency Injection, BLoC, Dio, and Hive.</li>
+              <li>Integrated Firebase Remote Config and Firebase Analytics.</li>
+              <li>Implemented flavors for development, testing, and production phases.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>IDCAMP Facilitator 2022</h3>
+                <h4>Dicoding Indonesia</h4>
+              </div>
+              <span>Sep 2022 - Dec 2022</span>
+            </div>
+            <ul>
+              <li>Helped participants solve problems and finish Flutter classes.</li>
+              <li>Increased discussion quality and focused on solving participant problems.</li>
+              <li>Provided suggestions for Flutter best practices and code quality.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Mobile Developer</h3>
+                <h4>PT. UKUR Kreasi Nusantara</h4>
+              </div>
+              <span>Feb 2022 - Dec 2022</span>
+            </div>
+            <ul>
+              <li>Created UKUR Marketplace and UKUR Merchant app from scratch for Android and iOS.</li>
+              <li>Set up architecture, project structure, and required application modules.</li>
+              <li>Implemented BLoC, Firebase Analytics, Crashlytics, REST API, GraphQL, WebSocket, and Hive.</li>
+              <li>Performed manual testing, documentation, APK delivery, and feature review.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Mobile Developer Freelancer</h3>
+                <h4>Freelance</h4>
+              </div>
+              <span>Aug 2021 - Present</span>
+            </div>
+            <ul>
+              <li>Created apps for small businesses, including e-commerce and booking systems.</li>
+              <li>Implemented UI from Figma designs into Flutter.</li>
+              <li>Integrated and consumed REST APIs.</li>
+              <li>Wrote unit tests and integration tests to ensure code quality.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Programmer</h3>
+                <h4>PT Pupuk Kalimantan Timur</h4>
+              </div>
+              <span>Oct 2020 - Jan 2021</span>
+            </div>
+            <ul>
+              <li>Created PI Sign app from scratch for Android platform.</li>
+              <li>Implemented Kotlin, Fast Android Networking, and MVVM pattern.</li>
+              <li>Collaborated with Backend Developer and System Analyst.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>IT Staff Intern</h3>
+                <h4>Sekretariat Daerah Kota Samarinda</h4>
+              </div>
+              <span>Sep 2017 - Oct 2017</span>
+            </div>
+            <ul>
+              <li>Created an information management system to handle official letters.</li>
+              <li>Created documentation about how to use the system.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container fade-up">
+        <div class="section-header">
+          <p>Education</p>
+          <h2>Education & Certification</h2>
+        </div>
+
+        <div class="info-grid">
+          <div class="card info-card">
+            <h3>Mulawarman University</h3>
+            <p>Bachelor of Computer Science</p>
+            <p>GPA 3.65 | 2014 - 2018</p>
+          </div>
+          <div class="card info-card">
+            <h3>Menjadi Flutter Developer Expert</h3>
+            <p>Dicoding Indonesia</p>
+            <p>Issued November 2021 - Expires November 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <div class="container fade-up">
+        <div class="section-header">
+          <p>Portfolio</p>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <a href="#modal-bale" class="portfolio-card">
+            <img src="assets/portfolio/bale-developer.png" alt="Bale Developer" />
+            <div class="portfolio-content">
+              <h3>Bale Developer</h3>
+              <p>Unit Stock & KPR Management Application for Developers.</p>
+              <span>Flutter</span><span>Dart</span><span>REST API</span><span>Firebase</span>
+            </div>
+          </a>
+
+          <a href="#modal-myjapfa" class="portfolio-card">
+            <img src="assets/portfolio/myjapfa.png" alt="MyJAPFA" />
+            <div class="portfolio-content">
+              <h3>MyJAPFA</h3>
+              <p>Work Schedule Management Feature for employee schedules, shifts, and attendance.</p>
+              <span>Flutter</span><span>Riverpod</span><span>HTTP</span><span>Hive</span>
+            </div>
+          </a>
+
+          <a href="#modal-smmf" class="portfolio-card">
+            <img src="assets/portfolio/smmf-one.png" alt="SMMF One" />
+            <div class="portfolio-content">
+              <h3>SMMF One</h3>
+              <p>MRP Management Feature for faster approval process.</p>
+              <span>Flutter</span><span>GetX</span><span>HTTP</span><span>FCM</span>
+            </div>
+          </a>
+
+          <a href="#modal-mitra" class="portfolio-card">
+            <img src="assets/portfolio/mitra-mega.png" alt="Mitra Mega" />
+            <div class="portfolio-content">
+              <h3>Mitra Mega</h3>
+              <p>Partner App for Agents PT. Mega Finance to submit financing and track orders.</p>
+              <span>Flutter</span><span>BLoC</span><span>Dio</span><span>Hive</span>
+            </div>
+          </a>
+
+          <a href="#modal-ukur-marketplace" class="portfolio-card">
+            <img src="assets/portfolio/ukur-marketplace.png" alt="UKUR Marketplace" />
+            <div class="portfolio-content">
+              <h3>UKUR Marketplace</h3>
+              <p>Marketplace app for furniture, décor, and home appliances.</p>
+              <span>Flutter</span><span>BLoC</span><span>GraphQL</span><span>WebSocket</span>
+            </div>
+          </a>
+
+          <a href="#modal-ukur-merchant" class="portfolio-card">
+            <img src="assets/portfolio/ukur-merchant.png" alt="UKUR Merchant" />
+            <div class="portfolio-content">
+              <h3>UKUR Merchant</h3>
+              <p>Merchant app for managing store, products, orders, and sales performance.</p>
+              <span>Flutter</span><span>BLoC</span><span>REST API</span><span>GraphQL</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container fade-up">
+        <div class="section-header">
+          <p>Contact</p>
+          <h2>Let's Work Together</h2>
+        </div>
+
+        <div class="card contact-card">
+          <p>Email: <a href="mailto:rifkipelajar@gmail.com">rifkipelajar@gmail.com</a></p>
+          <p>Phone: <a href="tel:+6285250708309">+6285250708309</a></p>
+          <p>LinkedIn: <a href="https://linkedin.com/in/rifkics29" target="_blank"
+              rel="noopener">linkedin.com/in/rifkics29</a></p>
+          <p>Github: <a href="https://github.com/RifkiCS29" target="_blank" rel="noopener">github.com/RifkiCS29</a></p>
+          <p>Portfolio: <a href="https://bit.ly/portfolio-rifki-2025" target="_blank"
+              rel="noopener">bit.ly/portfolio-rifki-2025</a></p>
+
+          <div class="hero-actions center">
+            <a href="mailto:rifkipelajar@gmail.com" class="btn primary">Hire Me</a>
+            <a href="mailto:rifkipelajar@gmail.com" class="btn secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Rifki. All Rights Reserved.</p>
+    <span>Built with HTML & CSS</span>
+  </footer>
+
+  <div id="modal-bale" class="portfolio-modal">
+    <a href="#portfolio" class="modal-close">×</a>
+    <div class="modal-content">
+      <img src="assets/portfolio/bale-developer.png" alt="Bale Developer Preview" />
+      <h3>Bale Developer</h3>
+      <p>Flutter • Dart • REST API • Firebase</p>
     </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h2 class="mb-0">RIFKI
-          <span class="text-primary">(Junior Web Programmer)</span>
-        </h2>
-        <div class="subheading mb-5">Cokroaminoto Street · Muara Badak, 75382 · (+62)-852-5070-8309 ·
-          <a href="mailto:name@email.com">rifkipelajar@gmail.com</a>
-        </div>
-        <p class="lead mb-5">I'm fresh graduted  from department computer science, Mulawarman university. Ambitious person and want to learn something new about web programming. I'm beginner for Laravel or CodeIgniter and make project for less than a year but I think I need more experience about  web programming project.I strive for continued excellence and I will provide exceptional contributions to the team</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/rifki-cs-724653102/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/RifkiCS29">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://twitter.com/Rifki_CS29">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.facebook.com/rifki.jackson.12">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">IT Staff Intern</h3>
-            <div class="subheading mb-3">Sekretariat Daerah Kota Samarinda</div>
-            <p>Make An Information Management System Web Based to handle every letters at Sekretariat Daerah Kota Samarinda</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - October 2017</span>
-          </div>
-        </div>
-
-        <div class="card-group">
-          <div class="card">
-            <img class="card-img-top" src="img/home.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 align="center" class="card-title">Home Page</h5>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="img/dashboard-admin.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 align="center" class="card-title">Dashboard Admin</h5>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="img/dashboard-bagian.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 align="center" class="card-title">Dashboard Department</h5>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Mulawarman University</h3>
-            <div class="subheading mb-3">Bachelor of Computer Science</div>
-            <p>GPA: 3.65</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2014 - September 2018</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Informal Education</h3>
-            <div class="subheading mb-3">Mikrotik Certification at Mulawarman University</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2016</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-bootstrap"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-laravel"></i>
-          </li>
-          <li class="list-inline-item">
-            <svg class="icon icon-codeigniter"><use xlink:href="#icon-codeigniter"></use></svg>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-vuejs"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-        </ul>
-
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a web developer, I enjoy most of my time for sharing knowledge. In Programmer Group, I am sharing web programming tutorial to newbie and answer every question about fundamental web programming.</p>
-        <p class="mb-0">I follow a number of sci-fi and fantasy genre movies and television shows, and I spend a large amount of my free time exploring the latest technology advancements in the back-end and front-end web development.</p>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">  
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Memulai Pemrograman dengan Kotlin (Dicoding) - 2020</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Web Fundamental (Dicoding) - 2019</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Belajar Membuat Aplikasi Android untuk Pemula (Dicoding) - 2019</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mikrotik Certified (MTCNA) - 2016</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            4<sup>th</sup>
-            Place - Computer Olympiad Kutai Kartanegara regional -  2012</li>
-        </ul>
-      </div>
-    </section>
-
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <div id="modal-myjapfa" class="portfolio-modal">
+    <a href="#portfolio" class="modal-close">×</a>
+    <div class="modal-content">
+      <img src="assets/portfolio/myjapfa.png" alt="MyJAPFA Preview" />
+      <h3>MyJAPFA</h3>
+      <p>Flutter • Riverpod • HTTP • FCM • Hive</p>
+    </div>
+  </div>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <div id="modal-smmf" class="portfolio-modal">
+    <a href="#portfolio" class="modal-close">×</a>
+    <div class="modal-content">
+      <img src="assets/portfolio/smmf-one.png" alt="SMMF One Preview" />
+      <h3>SMMF One</h3>
+      <p>Clean Architecture • GetX • HTTP • Firebase Cloud Messaging • Hive</p>
+    </div>
+  </div>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+  <div id="modal-mitra" class="portfolio-modal">
+    <a href="#portfolio" class="modal-close">×</a>
+    <div class="modal-content">
+      <img src="assets/portfolio/mitra-mega.png" alt="Mitra Mega Preview" />
+      <h3>Mitra Mega</h3>
+      <p>Modularization • Clean Architecture • BLoC • Firebase • Dio • Hive</p>
+    </div>
+  </div>
 
+  <div id="modal-ukur-marketplace" class="portfolio-modal">
+    <a href="#portfolio" class="modal-close">×</a>
+    <div class="modal-content">
+      <img src="assets/portfolio/ukur-marketplace.png" alt="UKUR Marketplace Preview" />
+      <h3>UKUR Marketplace</h3>
+      <p>Flutter • BLoC • REST API • GraphQL • WebSocket • Hive</p>
+    </div>
+  </div>
+
+  <div id="modal-ukur-merchant" class="portfolio-modal">
+    <a href="#portfolio" class="modal-close">×</a>
+    <div class="modal-content">
+      <img src="assets/portfolio/ukur-merchant.png" alt="UKUR Merchant Preview" />
+      <h3>UKUR Merchant</h3>
+      <p>Flutter • BLoC • REST API • GraphQL • WebSocket • Firebase</p>
+    </div>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
 </body>
 
 </html>
