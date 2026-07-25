@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kebijakan Privasi aplikasi PosOff." />
+    <meta name="theme-color" content="#0f172a" />
+    <title>Kebijakan Privasi | PosOff</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #f97316;
+            --accent-dark: #c2410c;
+            --background: #f8fafc;
+            --surface: #ffffff;
+            --text: #172033;
+            --muted: #64748b;
+            --border: #e2e8f0;
+            --soft: #fff7ed;
+            --shadow: 0 20px 55px rgba(15, 23, 42, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 90% 0%, rgba(249, 115, 22, 0.11), transparent 30rem),
+                var(--background);
+            font-family: Inter, "Segoe UI", Arial, sans-serif;
+            line-height: 1.75;
+        }
+
+        button,
+        a {
+            font: inherit;
+        }
+
+        a {
+            color: var(--accent-dark);
+            font-weight: 750;
+            text-underline-offset: 3px;
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+            background: rgba(248, 250, 252, 0.88);
+            backdrop-filter: blur(16px);
+        }
+
+        .topbar-inner {
+            width: min(960px, calc(100% - 40px));
+            min-height: 72px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            color: var(--primary);
+            font-size: 19px;
+            font-weight: 850;
+            letter-spacing: -0.03em;
+        }
+
+        .brand-mark {
+            width: 39px;
+            height: 39px;
+            display: grid;
+            place-items: center;
+            border-radius: 12px;
+            color: #fff;
+            background: linear-gradient(145deg, #fb923c, var(--accent-dark));
+            box-shadow: 0 8px 20px rgba(194, 65, 12, 0.24);
+        }
+
+        .brand-mark svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .language-switch {
+            display: inline-flex;
+            padding: 4px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: var(--surface);
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+        }
+
+        .language-switch button {
+            min-width: 54px;
+            padding: 7px 12px;
+            border: 0;
+            border-radius: 8px;
+            color: var(--muted);
+            background: transparent;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 800;
+            transition: color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .language-switch button:hover {
+            color: var(--accent-dark);
+        }
+
+        .language-switch button[aria-pressed="true"] {
+            color: #fff;
+            background: var(--primary);
+            box-shadow: 0 4px 10px rgba(15, 23, 42, 0.2);
+        }
+
+        .language-switch button:focus-visible,
+        a:focus-visible {
+            outline: 3px solid rgba(249, 115, 22, 0.38);
+            outline-offset: 3px;
+        }
+
+        main {
+            width: min(880px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 72px 0 88px;
+        }
+
+        .hero {
+            margin-bottom: 38px;
+            text-align: center;
+        }
+
+        .hero-icon {
+            width: 68px;
+            height: 68px;
+            margin: 0 auto 22px;
+            display: grid;
+            place-items: center;
+            border: 1px solid #fed7aa;
+            border-radius: 22px;
+            color: var(--accent-dark);
+            background: var(--soft);
+        }
+
+        .hero-icon svg {
+            width: 34px;
+            height: 34px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 7vw, 56px);
+            line-height: 1.12;
+            letter-spacing: -0.045em;
+        }
+
+        .subtitle {
+            max-width: 720px;
+            margin: 18px auto 0;
+            color: var(--muted);
+            font-size: 17px;
+        }
+
+        .policy-card {
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 26px;
+            background: var(--surface);
+            box-shadow: var(--shadow);
+        }
+
+        .policy-section {
+            padding: 32px 38px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .policy-section:last-child {
+            border-bottom: 0;
+        }
+
+        .policy-section h2 {
+            margin-bottom: 10px;
+            color: var(--primary);
+            font-size: 22px;
+            line-height: 1.35;
+            letter-spacing: -0.02em;
+        }
+
+        .policy-section p {
+            color: var(--muted);
+        }
+
+        .updated-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            background: var(--soft);
+        }
+
+        .updated-section h2 {
+            margin: 0;
+            font-size: 17px;
+        }
+
+        .updated-section p {
+            flex: 0 0 auto;
+            color: var(--accent-dark);
+            font-weight: 800;
+        }
+
+        .contact-box {
+            margin-top: 16px;
+            padding: 17px 19px;
+            border: 1px solid #fed7aa;
+            border-radius: 14px;
+            background: var(--soft);
+        }
+
+        .contact-box span {
+            color: #94a3b8;
+            padding: 0 8px;
+        }
+
+        footer {
+            padding: 26px 20px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            background: var(--surface);
+            text-align: center;
+            font-size: 14px;
+        }
+
+        [data-policy][hidden] {
+            display: none;
+        }
+
+        @media (max-width: 640px) {
+
+            .topbar-inner,
+            main {
+                width: min(100% - 28px, 880px);
+            }
+
+            .brand {
+                font-size: 17px;
+            }
+
+            .brand-mark {
+                width: 35px;
+                height: 35px;
+            }
+
+            .language-switch button {
+                min-width: 46px;
+                padding-inline: 9px;
+            }
+
+            main {
+                padding: 48px 0 64px;
+            }
+
+            .hero {
+                margin-bottom: 28px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .policy-card {
+                border-radius: 20px;
+            }
+
+            .policy-section {
+                padding: 26px 22px;
+            }
+
+            .updated-section {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .contact-box span {
+                display: block;
+                height: 5px;
+                font-size: 0;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand" aria-label="PosOff">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M4 3h16v5H4z"></path>
+                        <path d="M5 8v13h14V8"></path>
+                        <path d="M8 12h8M8 16h5"></path>
+                    </svg>
+                </span>
+                <span>PosOff</span>
+            </div>
+
+            <div class="language-switch" role="group" aria-label="Pilih bahasa / Choose language">
+                <button type="button" data-language="id" aria-pressed="true" aria-label="Bahasa Indonesia">ID</button>
+                <button type="button" data-language="en" aria-pressed="false" aria-label="English">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article data-policy="id">
+            <header class="hero">
+                <div class="hero-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                </div>
+                <h1>Kebijakan Privasi</h1>
+                <p class="subtitle">Kebijakan ini menjelaskan bagaimana PosOff mengelola data Anda. PosOff dirancang
+                    untuk beroperasi sepenuhnya offline, dan data Anda tetap berada di perangkat Anda.</p>
+            </header>
+
+            <div class="policy-card">
+                <section class="policy-section updated-section">
+                    <h2>Terakhir Diperbarui</h2>
+                    <p>10 Juni 2025</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Pengumpulan Data</h2>
+                    <p>PosOff hanya mengumpulkan data yang Anda masukkan langsung ke dalam aplikasi, termasuk: informasi
+                        toko (nama, alamat, nomor telepon, logo, gambar QRIS), data produk (nama, kategori, harga, stok,
+                        gambar, barcode, SKU), data transaksi (item, jumlah, harga, metode pembayaran, tanggal),
+                        informasi staf (nama, email, peran, kata sandi), serta pengaturan aplikasi (bahasa, tema).</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Penyimpanan Data</h2>
+                    <p>Semua data disimpan secara lokal pada perangkat Anda menggunakan database SQLite. Tidak ada data
+                        yang dikirim ke server eksternal atau cloud. Data hanya dapat diakses melalui aplikasi di
+                        perangkat yang sama tempat data tersebut dibuat. Fitur cadangan (backup) memungkinkan Anda
+                        mengekspor data ke file JSON yang disimpan di perangkat Anda.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Penggunaan Data</h2>
+                    <p>Data yang Anda masukkan digunakan secara eksklusif untuk menjalankan fungsi aplikasi POS,
+                        termasuk: memproses transaksi penjualan, mengelola inventaris produk, menghasilkan laporan
+                        penjualan, mencetak struk melalui printer Bluetooth, dan mengelola akses staf. Data tidak
+                        digunakan untuk analitik, iklan, atau tujuan lainnya.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Pembagian Data</h2>
+                    <p>PosOff tidak membagikan data Anda kepada pihak ketiga mana pun. Karena aplikasi beroperasi
+                        sepenuhnya offline, tidak ada mekanisme untuk mengirim data ke luar perangkat Anda. Satu-satunya
+                        cara data keluar dari perangkat adalah melalui fitur cadangan manual yang Anda inisiasi sendiri.
+                    </p>
+                </section>
+                <section class="policy-section">
+                    <h2>Keamanan Data</h2>
+                    <p>Keamanan data Anda bergantung pada keamanan fisik perangkat Anda. Kata sandi staf dienkripsi
+                        sebelum disimpan. Kami menyarankan untuk: mengunci perangkat Anda dengan PIN/sandi/biometrik,
+                        tidak membagikan akses perangkat kepada orang yang tidak berwenang, dan menggunakan fitur
+                        cadangan secara berkala untuk mencegah kehilangan data.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Hak Pengguna</h2>
+                    <p>Anda memiliki kendali penuh atas data Anda, termasuk: mengakses, mengedit, atau menghapus data
+                        kapan saja melalui aplikasi, membuat cadangan data dalam format JSON, memulihkan data dari file
+                        cadangan, dan menghapus seluruh data dengan menghapus aplikasi. Tidak ada proses akun atau
+                        langganan, sehingga Anda bebas menggunakan aplikasi sesuai kebutuhan.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Privasi Anak</h2>
+                    <p>PosOff bukan aplikasi yang ditujukan untuk anak-anak. Aplikasi ini dirancang untuk digunakan oleh
+                        pemilik usaha dan staf yang bertanggung jawab atas pengelolaan toko. Kami tidak secara sengaja
+                        mengumpulkan data dari anak-anak.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Perubahan Kebijakan</h2>
+                    <p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan tercermin dalam
+                        pembaruan aplikasi. Kami menyarankan Anda untuk meninjau kebijakan ini secara berkala, terutama
+                        setelah memperbarui aplikasi ke versi terbaru.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Hubungi Kami</h2>
+                    <p>Jika Anda memiliki pertanyaan atau kekhawatiran mengenai kebijakan privasi ini, Anda dapat
+                        menghubungi pengembang melalui:</p>
+                    <div class="contact-box">
+                        <a href="mailto:rifkidev29@gmail.com">rifkidev29@gmail.com</a><span
+                            aria-hidden="true">|</span><a href="https://github.com/RifkiCS29" target="_blank"
+                            rel="noopener noreferrer">github.com/RifkiCS29</a>
+                    </div>
+                </section>
+            </div>
+        </article>
+
+        <article data-policy="en" lang="en" hidden>
+            <header class="hero">
+                <div class="hero-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                </div>
+                <h1>Privacy Policy</h1>
+                <p class="subtitle">This policy explains how PosOff handles your data. PosOff is designed to operate
+                    entirely offline, and your data remains on your device.</p>
+            </header>
+
+            <div class="policy-card">
+                <section class="policy-section updated-section">
+                    <h2>Last Updated</h2>
+                    <p>June 10, 2025</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Data Collection</h2>
+                    <p>PosOff only collects data that you directly enter into the application, including: store
+                        information (name, address, phone number, logo, QRIS image), product data (name, category,
+                        price, stock, images, barcode, SKU), transaction data (items, quantities, prices, payment
+                        method, date), staff information (name, email, role, password), and application settings
+                        (language, theme).</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Data Storage</h2>
+                    <p>All data is stored locally on your device using a SQLite database. No data is sent to external
+                        servers or the cloud. Data can only be accessed through the application on the same device where
+                        it was created. The backup feature allows you to export data to a JSON file stored on your
+                        device.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Data Usage</h2>
+                    <p>The data you enter is used exclusively to run POS application functions, including: processing
+                        sales transactions, managing product inventory, generating sales reports, printing receipts via
+                        Bluetooth printers, and managing staff access. Data is not used for analytics, advertising, or
+                        any other purposes.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Data Sharing</h2>
+                    <p>PosOff does not share your data with any third parties. Because the application operates entirely
+                        offline, there is no mechanism to send data outside your device. The only way data leaves your
+                        device is through the manual backup feature that you initiate yourself.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Data Security</h2>
+                    <p>The security of your data depends on the physical security of your device. Staff passwords are
+                        encrypted before being stored. We recommend: locking your device with PIN/password/biometrics,
+                        not sharing device access with unauthorized persons, and using the backup feature regularly to
+                        prevent data loss.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>User Rights</h2>
+                    <p>You have full control over your data, including: accessing, editing, or deleting data at any time
+                        through the application, creating data backups in JSON format, restoring data from backup files,
+                        and deleting all data by uninstalling the application. There are no account or subscription
+                        processes, so you are free to use the application as needed.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Children's Privacy</h2>
+                    <p>PosOff is not an application intended for children. This application is designed for use by
+                        business owners and staff responsible for store management. We do not knowingly collect data
+                        from children.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Policy Changes</h2>
+                    <p>We may update this privacy policy from time to time. Changes will be reflected in application
+                        updates. We recommend that you review this policy periodically, especially after updating the
+                        application to the latest version.</p>
+                </section>
+                <section class="policy-section">
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions or concerns about this privacy policy, you can contact the developer
+                        at:</p>
+                    <div class="contact-box">
+                        <a href="mailto:rifkidev29@gmail.com">rifkidev29@gmail.com</a><span
+                            aria-hidden="true">|</span><a href="https://github.com/RifkiCS29" target="_blank"
+                            rel="noopener noreferrer">github.com/RifkiCS29</a>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer>© 2025 PosOff</footer>
+
+    <script>
+        const policies = document.querySelectorAll('[data-policy]');
+        const languageButtons = document.querySelectorAll('[data-language]');
+
+        function setLanguage(language) {
+            const selectedLanguage = language === 'en' ? 'en' : 'id';
+
+            policies.forEach((policy) => {
+                policy.hidden = policy.dataset.policy !== selectedLanguage;
+            });
+
+            languageButtons.forEach((button) => {
+                button.setAttribute('aria-pressed', button.dataset.language === selectedLanguage);
+            });
+
+            document.documentElement.lang = selectedLanguage;
+            document.title = selectedLanguage === 'id'
+                ? 'Kebijakan Privasi | PosOff'
+                : 'Privacy Policy | PosOff';
+
+            try {
+                localStorage.setItem('posoff-policy-language', selectedLanguage);
+            } catch (_) {
+                // The switch still works if browser storage is unavailable.
+            }
+        }
+
+        languageButtons.forEach((button) => {
+            button.addEventListener('click', () => setLanguage(button.dataset.language));
+        });
+
+        try {
+            const savedLanguage = localStorage.getItem('posoff-policy-language');
+            if (savedLanguage) setLanguage(savedLanguage);
+        } catch (_) {
+            // Indonesian remains the default language.
+        }
+    </script>
+</body>
+
+</html>
